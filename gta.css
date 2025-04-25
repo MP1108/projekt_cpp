@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    font-size: 16px; 
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ddd;
+}
+
+body.dark-mode .links a {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode .footer {
+    background: rgba(30, 30, 30, 0.8);
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    margin: 0 20px;
+}
+
+h1 {
+    font-size: 2.5em; 
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px purple;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.links a {
+    background-color: #f5b700;
+    color: black;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.25em; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.links a:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer a {
+    color: #f5b700;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.controls {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.controls button {
+    padding: 5px 10px;
+    background-color: #f5b700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.controls button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.preloader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.preloader img {
+    width: 300px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}

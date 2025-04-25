@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #000000, #6e6a03f6);
+  color: rgb(250, 250, 250);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode {
+  background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+  color: #ddd;
+}
+
+body.dark-mode .table-container {
+  background: rgba(30, 30, 30, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode table {
+  box-shadow: 0 0 10px rgba(255, 242, 2, 0.2);
+}
+
+body.dark-mode th {
+  background-color: #444;
+  color: white;
+  border-color: #555;
+}
+
+body.dark-mode td {
+  background-color: #333;
+  border-color: #555;
+}
+
+body.dark-mode tr:hover {
+  background-color: #444;
+}
+
+body.dark-mode .edytuj {
+  background-color: #444;
+  border-color: #555;
+  color: white;
+}
+
+body.dark-mode .edytuj:hover {
+  background-color: #ffcc00;
+  color: black;
+  border-color: #ffcc00;
+}
+
+body.dark-mode input, body.dark-mode textarea {
+  background-color: #444;
+  border-color: #555;
+  color: white;
+}
+
+body.dark-mode input[type="submit"] {
+  background-color: #444;
+  border-color: #555;
+  color: white;
+}
+
+body.dark-mode input[type="submit"]:hover {
+  background-color: #ffcc00;
+  color: black;
+  border-color: #ffcc00;
+}
+
+body.dark-mode input:hover:not([type="submit"]), body.dark-mode textarea:hover {
+  background-color: #555;
+  color: white;
+  border-color: #777;
+}
+
+body.dark-mode a {
+  color: #f5b700;
+}
+
+body.dark-mode a:hover {
+  color: #ffcc00;
+}
+
+.controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.controls button {
+  padding: 5px 10px;
+  background-color: #f5b700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  color: black;
+}
+
+.controls button:hover {
+  background-color: #ffcc00;
+  transform: scale(1.1);
+}
+
+.table-container {
+  position: relative;
+  width: 60%;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  color: #fff202;
+  margin: 20px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+body.dark-mode h2 {
+  color: #ffcc00;
+}
+.form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(34, 34, 34, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .form-container {
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff202;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff202;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  border-color: #555;
+  background-color: #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+}
+
+.form-group input[type="submit"] {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #ffd700;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+}
+
+body.dark-mode .form-group input[type="submit"] {
+  background-color: #444;
+  color: white;
+}
+
+body.dark-mode .form-group input[type="submit"]:hover {
+  background-color: #ffcc00;
+  color: black;
+}
